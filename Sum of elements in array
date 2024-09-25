@@ -1,0 +1,22 @@
+import java.util.Scanner;  
+
+class Addition {  
+    public static void main(String args[]) {  
+        Scanner a = new Scanner(System.in);  
+        System.out.print("Enter the number of elements: ");  
+        int b = a.nextInt();  
+        int arr[] = new int[b];  
+        int sum = 0; // Move sum outside the loop  
+        
+        System.out.println("Enter the elements:222");  
+        for (int i = 0; i < b; i++) {  
+            arr[i] = a.nextInt();  
+        }  
+
+        for (int i = 0; i < b; i++) {  
+            sum += arr[i]; // Accumulate the sum  
+        }  
+
+        System.out.println("Total sum: " + sum); // Print the total sum  
+    }  
+}
